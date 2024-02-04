@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold drop-shadow;
+  }
+  h2 {
+    @apply text-xl font-bold drop-shadow;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply container mx-auto px-4 xl:px-0;
+  }
+}
+
+.shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+table th,td {
+  padding-block: 0.6rem;
+}
+
+table tr:nth-child(even){
+  background-color: #f8f8f8;
+}
+
+table th{
+  background-color: #e9e9e9;
+}
